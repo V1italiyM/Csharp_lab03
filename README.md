@@ -346,15 +346,15 @@
             // Примеры преобразования валют
             CurrencyUSD usd = new CurrencyUSD(100);
             Console.WriteLine($"Явное преобразование 100 USD в EUR: {(CurrencyEUR)(usd)}"); // Явное преобразование
-            Console.WriteLine($"Неявное преобразование 100 USD в RUB: {(CurrencyRUB)(usd)}"); // Неявное преобразование
+            Console.WriteLine($"Неявное преобразование 100 USD в RUB: {(usd)}"); // Неявное преобразование
     
             CurrencyEUR eur = new CurrencyEUR(100);
             Console.WriteLine($"Явное преобразование 100 EUR в USD: {(CurrencyUSD)(eur)}"); // Явное преобразование
-            Console.WriteLine($"Неявное преобразование 100 EUR в RUB: {(CurrencyRUB)(eur)}"); // Неявное преобразование
+            Console.WriteLine($"Неявное преобразование 100 EUR в RUB: {(eur)}"); // Неявное преобразование
     
             CurrencyRUB rub = new CurrencyRUB(100);
             Console.WriteLine($"Явное преобразование 100 RUB в USD: {(CurrencyUSD)(rub)}"); // Явное преобразование
-            Console.WriteLine($"Неявное преобразование 100 RUB в EUR: {(CurrencyEUR)(rub)}"); // Неявное преобразование
+            Console.WriteLine($"Неявное преобразование 100 RUB в EUR: {(rub)}"); // Неявное преобразование
         }
     }
 C# lab03
